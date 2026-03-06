@@ -2,21 +2,123 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Web Test Project</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atelier North | Architecture Studio</title>
+  <meta name="description" content="Atelier North is a design-driven architecture firm creating homes, civic spaces, and mixed-use developments.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+  <div class="page-glow page-glow-top" aria-hidden="true"></div>
+  <div class="page-glow page-glow-bottom" aria-hidden="true"></div>
 
-<h1>GitHub Live Test</h1>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top">Atelier North</a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#projects">Projects</a>
+      <a href="#services">Services</a>
+      <a href="#process">Process</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="header-cta" href="#contact">Start a Project</a>
+  </header>
 
-<p id="message">
-This message will change when JavaScript runs.
-</p>
+  <main>
+    <section class="hero reveal">
+      <p class="eyebrow">Architecture + Urban Design</p>
+      <h1>Spaces that shape how people live, gather, and belong.</h1>
+      <p class="hero-copy">
+        We are a New York-based architecture firm designing resilient homes, hospitality spaces,
+        and civic landmarks with material clarity and long-term performance.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#projects">View Work</a>
+        <a class="btn btn-secondary" href="#contact">Book Consultation</a>
+      </div>
+      <ul class="hero-metrics" aria-label="Firm highlights">
+        <li><span>140+</span>Completed projects</li>
+        <li><span>22</span>Industry awards</li>
+        <li><span>18</span>Years of practice</li>
+      </ul>
+    </section>
 
-<button onclick="updateMessage()">Click Me</button>
+    <section class="projects reveal" id="projects">
+      <div class="section-head">
+        <p class="eyebrow">Featured Projects</p>
+        <h2>Selected work from coast to coast.</h2>
+      </div>
+      <div class="project-grid">
+        <article class="project-card">
+          <p class="project-type">Residential</p>
+          <h3>Hudson Courtyard House</h3>
+          <p>A layered timber residence centered on a wind-protected courtyard and passive cooling.</p>
+        </article>
+        <article class="project-card">
+          <p class="project-type">Civic</p>
+          <h3>Brookline Cultural Pavilion</h3>
+          <p>A flexible public venue with a sculpted roofline and low-energy envelope strategy.</p>
+        </article>
+        <article class="project-card">
+          <p class="project-type">Mixed-Use</p>
+          <h3>Riverfront Quarter</h3>
+          <p>Adaptive reuse of a warehouse district into housing, maker studios, and retail.</p>
+        </article>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <section class="services reveal" id="services">
+      <div class="section-head">
+        <p class="eyebrow">Services</p>
+        <h2>Full-scope design from first sketch to final detailing.</h2>
+      </div>
+      <div class="service-columns">
+        <div>
+          <h3>Architecture</h3>
+          <p>Ground-up residential, hospitality, and workplace projects with climate-informed planning.</p>
+        </div>
+        <div>
+          <h3>Interiors</h3>
+          <p>Material palettes, custom millwork, and lighting systems that bring warmth and precision.</p>
+        </div>
+        <div>
+          <h3>Master Planning</h3>
+          <p>District-scale strategies balancing mobility, public space, and long-term growth.</p>
+        </div>
+      </div>
+    </section>
 
+    <section class="process reveal" id="process">
+      <div class="section-head">
+        <p class="eyebrow">Our Process</p>
+        <h2>Structured, collaborative, and transparent at every stage.</h2>
+      </div>
+      <ol class="process-list">
+        <li><strong>Discovery:</strong> We map site constraints, goals, budget, and approval pathways.</li>
+        <li><strong>Design:</strong> We iterate concept options into coordinated architecture and interiors.</li>
+        <li><strong>Delivery:</strong> We lead documentation and construction support through completion.</li>
+      </ol>
+    </section>
+
+    <section class="testimonial reveal" aria-label="Client testimonial">
+      <blockquote>
+        “Atelier North transformed a challenging site into our most visited and loved civic building.”
+      </blockquote>
+      <p>City of Brookline, Capital Projects Team</p>
+    </section>
+  </main>
+
+  <footer class="site-footer reveal" id="contact">
+    <div>
+      <p class="eyebrow">Contact</p>
+      <h2>Planning a project in 2026?</h2>
+      <p>Tell us about your site, timeline, and ambitions. We typically respond within one business day.</p>
+    </div>
+    <a class="btn btn-primary" href="mailto:studio@ateliernorth.com">studio@ateliernorth.com</a>
+    <p class="copyright">&copy; <span id="year"></span> Atelier North. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
