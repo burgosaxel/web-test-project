@@ -1,11 +1,35 @@
 body{
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     text-align: center;
-    margin-top: 100px;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #c51f1f;
+    color: #ffffff;
+}
+
+h1{
+    margin-bottom: 16px;
+}
+
+#message{
+    margin-bottom: 20px;
+    font-size: 18px;
 }
 
 button{
     padding: 10px 20px;
     font-size: 16px;
     cursor: pointer;
+    background-color: #ffffff;
+    color: #c51f1f;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover{
+    opacity: 0.9;
 }
